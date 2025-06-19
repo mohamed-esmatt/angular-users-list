@@ -1,0 +1,37 @@
+[
+  {
+    "ProfilePicture": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    "UserName": "mohamed",
+    "Email": "mohamed@gmail.com",
+    "PhoneNumber": "",
+    "BirthDate": "",
+    "RoleChip": "moderator"
+  },
+
+  {
+    "ProfilePicture": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    "UserName": "mina",
+    "Email": "mina@gmail.com",
+    "PhoneNumber": "",
+    "BirthDate": "",
+    "RoleChip": "user"
+  },
+
+  {
+    "ProfilePicture": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    "UserName": "adel",
+    "Email": "adel@gmail.com",
+    "PhoneNumber": "",
+    "BirthDate": "",
+    "RoleChip": "user"
+  },
+
+  {
+    "ProfilePicture": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    "UserName": "ali",
+    "Email": "ali@gmail.com",
+    "PhoneNumber": "",
+    "BirthDate": "",
+    "RoleChip": "admin"
+  }
+]

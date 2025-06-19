@@ -1,0 +1,51 @@
+<h1 class="my-3 ms-4">Users</h1>
+<div class="d-flex justify-content-center my-3">
+  <input
+    [(ngModel)]="searchTerm"
+    (input)="searchUsers()"
+    placeholder="Search by email"
+    class="form-control w-50"
+  />
+
+  <button
+    *ngIf="searchTerm"
+    (click)="resestSearch()"
+    class="btn btn-danger ms-3"
+  >
+    Reset
+  </button>
+</div>
+<div class="d-flex justify-content-center card my-5 mx-5">
+  <div class="row">
+    <div *ngFor="let user of filteredUsers" class="col-6">
+      <div class="card m-3 rounded-5">
+        <img
+          [src]="user.ProfilePicture"
+          width="100px"
+          class="m-auto my-3 rounded-5"
+        />
+        <div class="card-body m-auto">
+          <p
+            class="card-header bg-gradient ps-5 mb-2"
+            [ngStyle]="{
+              'background-color':
+                user.RoleChip === 'admin'
+                  ? '#e74c3c'
+                  : user.RoleChip === 'moderator'
+                  ? 'yellow'
+                  : user.RoleChip === 'user'
+                  ? '#27ae60'
+                  : 'transparent'
+            }"
+          >
+            {{ user.RoleChip }}
+          </p>
+          <p class="card-text">Name : {{ user.UserName }}</p>
+          <p class="card-text">Email : {{ user.Email }}</p>
+          <p class="card-text">Phone :{{ user.PhoneNumber }}</p>
+          <p class="card-text">BirthDate : {{ user.BirthDate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
