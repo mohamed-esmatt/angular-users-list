@@ -1,12 +1,13 @@
-import { NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { UserComponent } from '../user/user.component';
 
 @Component({
   selector: 'app-users-list',
   standalone: true,
-  imports: [NgFor, NgIf, NgStyle, NgClass, FormsModule, HttpClientModule],
+  imports: [NgFor, NgIf, FormsModule, HttpClientModule, UserComponent],
   templateUrl: './users-list.component.html',
   styleUrl: './users-list.component.css',
 })

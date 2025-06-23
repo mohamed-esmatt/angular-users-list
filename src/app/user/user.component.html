@@ -1,0 +1,28 @@
+<div class="card m-3 rounded-5">
+  <img
+    [src]="user.ProfilePicture"
+    width="100px"
+    class="m-auto my-3 rounded-5"
+  />
+  <div class="card-body m-auto">
+    <p
+      class="card-header bg-gradient ps-5 mb-2"
+      [ngStyle]="{
+        'background-color':
+          user.RoleChip === 'admin'
+            ? '#e74c3c'
+            : user.RoleChip === 'moderator'
+            ? 'yellow'
+            : user.RoleChip === 'user'
+            ? '#27ae60'
+            : 'transparent'
+      }"
+    >
+      {{ user.RoleChip }}
+    </p>
+    <p class="card-text">Name : {{ user.UserName }}</p>
+    <p class="card-text">Email : {{ user.Email }}</p>
+    <p class="card-text">Phone :{{ user.PhoneNumber }}</p>
+    <p class="card-text">BirthDate : {{ user.BirthDate }}</p>
+  </div>
+</div>
